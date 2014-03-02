@@ -1,19 +1,20 @@
 package com.blogspot.sysexit.patterns.decorator;
 
-public class Milk extends CondimentDecorator {
+public class Whip extends CondimentDecorator {
     Beverage beverage;
 
-    public Milk (Beverage beverage) {
+    public Whip(Beverage beverage) {
         this.beverage = beverage;
     }
 
     @Override
     public String getDescription() {
-        return beverage.getDescription() + ", Milk";
+        return beverage.getDescription() + ", Whip";
     }
 
     @Override
     public double cost() {
         return beverage.cost() + 0.10;
     }
+
 }
